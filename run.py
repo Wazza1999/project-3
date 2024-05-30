@@ -1,5 +1,5 @@
 import gspread
-from google.oauth2.service_account import credentials
+from google.oauth2.service_account import Credentials
 
 ### SCOPE code
 SCOPE = [
@@ -8,9 +8,13 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
     ]
 
-CREDS = credentials.from_service_account_file("creds.json")
+CREDS = Credentials.from_service_account_file("creds.json")
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('Project 3')
+SHEET = GSPREAD_CLIENT.open('Le_Bouchon')
 
-sales = SHEET.worksheet('sales')
+sales = SHEET.worksheet('Sales')
+
+data = sales.get_all_values()
+
+print(data)
