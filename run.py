@@ -34,11 +34,25 @@ while attempts < 3:
         attempts += 1
         continue
 
-# If yes is selected the program will show the sales data
-user_input = input('Would you like to see the Sales data that is available? y/n:')
+# If yes is selected the program will show the sales data from the current week
+user_input = input('Would you like to see the Sales data from the current week? y/n:')
 if user_input == 'y':
     print(data)
-
+    
 else:
     print("Thank you have a nice day :)")
+    exit(1)
+
+
+def get_sales_data():
+    print("Please enter sales data from the previous week."  )
+    print("The data should be seven numbers, seperated by commas.")
+
+
+    data_str = input("Enter you data here:")
+
+    sales_data = data_str.split(",")
+    print(sales_data) 
+
+get_sales_data()
 

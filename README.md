@@ -1,4 +1,4 @@
-# Corri Construction Company - Contractor Page
+# Le Bouchon Hotel Stock intake Program
 ![CCCCP header] 
 
 
@@ -41,18 +41,14 @@ The deployed project live link is [HERE]  - ***Use Ctrl (Cmd) and click to open 
 
 ## Introduction
 
-This portal asks contractors to input their name, profession, working dates, number of days worked and number of hours. They are then given a rough estimate of their pay due after tax and NI (which is handled by an umbrella company). The data is forwarded to HR (who extract information for the umbrella company) with a copy also sent to the contractor's email address.
+This portal asks employees at Le Bouchon Hotel if they want to see the sales data of the past week. It shows the sales data for each day and calculates the surplus of starters, mains and desserts that the restaurant has produced on that day as well as any extras that were disposed of. It will then recommend numbers for the company to produce based off the info from the previous week. The aim is to better predict stock intake and thereby predict sales for future weeks. 
 
 ## Project 
 
 The aim of this project is to:
 
-- Reduce the number of calls from contractors to HR asking about their pay.
-- Encourage contractors to enter their working dates regularly and within a couple of months.
-- Provide a system that will send the information added by the contractor to HR as well as the user.
-- Provide clear, visible instructions with each visit.*
 
-![storyboard](assets/images/ccccp-storyboard-small.png)
+![storyboard]()
 
 
 *Contractors felt that it was important for the instructions to be shown EACH TIME a contractor visits. In a questionnaire sent out many of them cited their dislike of technology and the fact that they tend to ignore instructions unless they are in front of them. This then results in phone calls to HR that could easily be avoided. For this reason it was decided to leave the instructions in full view each time, rather than hide them behind an instruction button.
