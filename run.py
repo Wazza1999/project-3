@@ -44,15 +44,4 @@ else:
     exit(1)
 
 
-def get_sales_data():
-    print("Please enter sales data from the previous week."  )
-    print("The data should be seven numbers, seperated by commas.")
-
-
-    data_str = input("Enter you data here:")
-
-    sales_data = data_str.split(",")
-    print(sales_data) 
-
-get_sales_data()
 
